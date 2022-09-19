@@ -9,6 +9,7 @@
 :root {
 
     /** colors **/
+    --primary: hsl(265, 100%, 50%);
     --imperial-red_12: hsla(357, 86%, 57%, 0.12);
     --pacific-blue_12: hsla(188, 78%, 41%, 0.12);
     --davys-gray_12: hsla(210, 9%, 31%, 0.12);
