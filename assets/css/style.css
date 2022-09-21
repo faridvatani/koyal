@@ -592,7 +592,16 @@ body {
 /***************** MEDIA QUERIES RESPONSIVE *****************/
 
 /********** larger than 400px screen **********/
-@media (min-width: 400px) { }
+@media (min-width: 400px) { 
+   
+    /*** HOME STYLE ***/  
+    .revenue-item:first-child { margin-bottom: 0; }
+
+    .revenue-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+}
   
 
 /********** larger than 570px screen **********/
@@ -607,6 +616,9 @@ body {
     /*** HEADER STYLE ***/  
     .navbar-list,
     .user-action-list { padding-inline: 0; }
+
+    /*** HOME STYLE ***/  
+    .card-price { --fs-2: 1.625rem; }
 }
   
 
@@ -615,6 +627,16 @@ body {
 
     /*** REUSED STYLE ***/
     .container { max-width: 700px; }
+
+    /*** HOME STYLE ***/
+    .progress-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .progress-item:not(:last-child) { margin-bottom: 0; }
+    .home .card-wrapper { grid-template-columns: 1fr 1fr; }
 }
 
 
@@ -655,6 +677,13 @@ body {
       flex-direction: row;
       gap: 20px;
     }
+
+    /*** HOME STYLE ***/
+    .article.container { padding-block: 35px; }
+    .home { grid-template-columns: 1.25fr 0.75fr 1fr; }
+    .home .card-wrapper { grid-template-columns: 1fr; }
+    .progress-list { align-items: flex-end; }
+
 }
   
   
@@ -666,4 +695,8 @@ body {
   
     /*** HEADER STYLE ***/  
     .navbar-list { gap: 25px; }
+
+    /*** HOME STYLE ***/
+    .card-price { --fs-2: 1.780rem; }
+
 }
