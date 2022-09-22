@@ -664,7 +664,6 @@ body {
    
     /*** HOME STYLE ***/  
     .revenue-item:first-child { margin-bottom: 0; }
-
     .revenue-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -751,6 +750,10 @@ body {
     .home { grid-template-columns: 1.25fr 0.75fr 1fr; }
     .home .card-wrapper { grid-template-columns: 1fr; }
     .progress-list { align-items: flex-end; }
+
+    /*** PROJECT STYLE ***/
+    .project-list { grid-template-columns: repeat(3, 1fr); }
+
 
 }
   
