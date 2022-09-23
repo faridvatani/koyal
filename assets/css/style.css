@@ -612,7 +612,7 @@ body {
   transition: var(--transition);
 }
 
-.project-card .card-title > a:is(:hover, :focus) { color: var(--blue-ryb); }
+.project-card .card-title > a:is(:hover, :focus) { color: var(--primary); }
 
 .project-card .card-badge { margin-bottom: 20px; }
 
@@ -667,10 +667,10 @@ body {
 
 .tasks .card-input > input {
   margin-top: 2px;
-  accent-color: var(--blue-ryb);
+  accent-color: var(--primary);
 }
 
-.tasks .card-input > input:checked { filter: drop-shadow(0 0 2px var(--blue-ryb)); }
+.tasks .card-input > input:checked { filter: drop-shadow(0 0 2px var(--primary)); }
 
 .tasks .task-label {
   color: var(--davys-gray);
@@ -702,7 +702,7 @@ body {
 
 .tasks .btn-primary .spiner {
   padding: 6px;
-  border: 2px solid var(--blue-ryb);
+  border: 2px solid var(--primary);
   border-top-color: transparent;
   border-radius: 50%;
   animation: rotate 0.75s linear infinite;
@@ -758,6 +758,9 @@ body {
 
     /*** HOME STYLE ***/  
     .card-price { --fs-2: 1.625rem; }
+
+    /*** TASKS STYLE ***/  
+    .tasks .card-meta-list { justify-content: flex-end; }
 }
   
 
@@ -826,7 +829,11 @@ body {
     /*** PROJECT STYLE ***/
     .project-list { grid-template-columns: repeat(3, 1fr); }
 
-
+    /*** TASKS STYLE ***/  
+    .tasks .task-card {
+      grid-template-columns: 1fr 0.5fr 0.5fr;
+      align-items: center;
+    }
 }
   
   
