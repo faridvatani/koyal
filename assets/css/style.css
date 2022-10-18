@@ -869,6 +869,14 @@ body {
       grid-template-columns: 1fr 0.5fr 0.5fr;
       align-items: center;
     }
+
+    /*** FOOTER STYLE ***/  
+    .footer-list { margin-bottom: 0; }
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 }
   
   
