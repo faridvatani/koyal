@@ -5,7 +5,7 @@
 This admin dashboard is fully responsive for all devices, Built using HTML, CSS, and JavaScript.
 
 ### Demo: 
-https://faridvatani.ir/koyal/
+https://faridvatani.github.io/koyal
 
 
 ### Prerequisites
